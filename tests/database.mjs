@@ -26,6 +26,25 @@ assert.equal((await db.query('select * from public.bingo_messages')).rows.length
 await assert.rejects(()=>db.query("select public.bingo_ingest('{}'::jsonb)"),/permission denied/);
 await assert.rejects(()=>db.query("insert into public.bingo_halls values('c','{}')"),/permission denied/);
 await assert.rejects(()=>db.query('select * from public.bingo_state'),/permission denied/);
+await assert.rejects(()=>db.query('select * from public.bingo_link_mappings'),/permission denied/);
+for(const role of ['anon','authenticated']){
+ await db.exec('reset role; set role '+role);
+ assert.equal((await db.query("select public.bingo_history('a',0) result")).rows[0].result.messages.length,3);
+ await assert.rejects(()=>db.query("select public.bingo_ingest('{}'::jsonb)"),/permission denied/);
+ await assert.rejects(()=>db.query("update public.bingo_halls set record='{}' where id='a'"),/permission denied/);
+ await assert.rejects(()=>db.query("delete from public.bingo_messages where id='promo'"),/permission denied/);
+ await assert.rejects(()=>db.query('select * from public.bingo_state'),/permission denied/);
+ await assert.rejects(()=>db.query('select * from public.bingo_link_mappings'),/permission denied/);
+}
+await db.exec('reset role; set role service_role');
+const many=Array.from({length:205},(_,i)=>({...message('page-'+String(i).padStart(3,'0'),'Bingo tonight! $500 prizes',['a']),receivedAt:new Date(Date.UTC(2026,8,12,0,i)).toISOString(),day:'2026-09-12'}));
+await db.query('select public.bingo_ingest($1::jsonb)',[JSON.stringify({messages:many})]);
+assert.equal((await db.query('select public.bingo_ingest($1::jsonb) added',[JSON.stringify({messages:many})])).rows[0].added,0);
+await db.exec('reset role; set role anon');
+const paged=[];
+for(let offset=0;;offset+=100){const page=(await db.query('select public.bingo_history($1,$2) result',['a',offset])).rows[0].result;paged.push(...page.messages);if(!page.hasMore)break;assert.equal(page.messages.length,100);assert.ok(offset<300);}
+assert.equal(paged.length,208);assert.equal(new Set(paged.map(m=>m.id)).size,208);
+assert.equal(paged.at(-1).id,'earlier');
 assert.equal(messageKind('Thanks so much! We\'ll send you a reminder 24 hours before our upcoming events!'),'subscription');
 assert.equal(messageKind('Welcome back for Saturday bingo! $50 buy-in. Reply STOP to end.'),'promotion');
 assert.equal(messageKind('Concord Bingo TEXTING Messages will keep you up to date on Special activities.'),'subscription');

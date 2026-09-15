@@ -1,0 +1,667 @@
+{
+  "referenceCommit": "c9ecfa1e67f4a69ece5244cc980a2cfb4ac14454",
+  "files": [
+    {
+      "from": "0000_bumpy_lizard.sql",
+      "to": "drizzle/0000_bumpy_lizard.sql",
+      "referenceMatch": true
+    },
+    {
+      "from": "0000_snapshot.json",
+      "to": "drizzle/meta/0000_snapshot.json",
+      "referenceMatch": true
+    },
+    {
+      "from": "0001_last_scourge.sql",
+      "to": "drizzle/0001_last_scourge.sql",
+      "referenceMatch": true
+    },
+    {
+      "from": "0001_snapshot.json",
+      "to": "drizzle/meta/0001_snapshot.json",
+      "referenceMatch": true
+    },
+    {
+      "from": "202609110001_bingo_monitor.sql",
+      "to": "supabase/migrations/202609110001_bingo_monitor.sql",
+      "referenceMatch": true
+    },
+    {
+      "from": "accordion.tsx",
+      "to": "components/ui/accordion.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "alert-dialog.tsx",
+      "to": "components/ui/alert-dialog.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "alert.tsx",
+      "to": "components/ui/alert.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "aspect-ratio.tsx",
+      "to": "components/ui/aspect-ratio.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "attachment.tsx",
+      "to": "components/ui/attachment.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "attribution-rules.json",
+      "to": "lib/attribution-rules.json",
+      "referenceMatch": true
+    },
+    {
+      "from": "attribution.ts",
+      "to": "lib/attribution.ts",
+      "referenceMatch": true
+    },
+    {
+      "from": "avatar.tsx",
+      "to": "components/ui/avatar.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "badge.tsx",
+      "to": "components/ui/badge.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "breadcrumb.tsx",
+      "to": "components/ui/breadcrumb.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "bubble.tsx",
+      "to": "components/ui/bubble.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "build-verified.sh",
+      "to": "scripts/build-verified.sh",
+      "referenceMatch": true
+    },
+    {
+      "from": "button-group.tsx",
+      "to": "components/ui/button-group.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "button.tsx",
+      "to": "components/ui/button.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "calendar.tsx",
+      "to": "components/ui/calendar.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "card.tsx",
+      "to": "components/ui/card.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "carousel.tsx",
+      "to": "components/ui/carousel.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "chart.tsx",
+      "to": "components/ui/chart.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "chatgpt-auth.ts",
+      "to": "app/chatgpt-auth.ts",
+      "referenceMatch": true
+    },
+    {
+      "from": "check.yml",
+      "to": ".github/workflows/check.yml",
+      "referenceMatch": true
+    },
+    {
+      "from": "checkbox.tsx",
+      "to": "components/ui/checkbox.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "classifier.d.ts",
+      "to": "lib/classifier.d.ts",
+      "referenceMatch": true
+    },
+    {
+      "from": "classifier.js",
+      "to": "lib/classifier.js",
+      "referenceMatch": true
+    },
+    {
+      "from": "cloudflare-env.d.ts",
+      "to": "cloudflare-env.d.ts",
+      "referenceMatch": true
+    },
+    {
+      "from": "collapsible.tsx",
+      "to": "components/ui/collapsible.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "combobox.tsx",
+      "to": "components/ui/combobox.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "command.tsx",
+      "to": "components/ui/command.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "components.json",
+      "to": "components.json",
+      "referenceMatch": true
+    },
+    {
+      "from": "context-menu.tsx",
+      "to": "components/ui/context-menu.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "database.mjs",
+      "to": "tests/database.mjs",
+      "referenceMatch": true
+    },
+    {
+      "from": "dialog.tsx",
+      "to": "components/ui/dialog.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "direction.tsx",
+      "to": "components/ui/direction.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "directory.json",
+      "to": "lib/directory.json",
+      "referenceMatch": true
+    },
+    {
+      "from": "download",
+      "to": ".gitignore",
+      "referenceMatch": true
+    },
+    {
+      "from": "download (1)",
+      "to": ".npmrc",
+      "referenceMatch": true
+    },
+    {
+      "from": "drawer.tsx",
+      "to": "components/ui/drawer.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "drizzle.config.ts",
+      "to": "drizzle.config.ts",
+      "referenceMatch": true
+    },
+    {
+      "from": "dropdown-menu.tsx",
+      "to": "components/ui/dropdown-menu.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "empty.tsx",
+      "to": "components/ui/empty.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "env.example",
+      "to": ".env.example",
+      "referenceMatch": true
+    },
+    {
+      "from": "eslint.config.mjs",
+      "to": "eslint.config.mjs",
+      "referenceMatch": true
+    },
+    {
+      "from": "execution-profile.mjs",
+      "to": "scripts/execution-profile.mjs",
+      "referenceMatch": true
+    },
+    {
+      "from": "favicon.svg",
+      "to": "public/favicon.svg",
+      "referenceMatch": true
+    },
+    {
+      "from": "field.tsx",
+      "to": "components/ui/field.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "form.tsx",
+      "to": "components/ui/form.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "globals.css",
+      "to": "app/globals.css",
+      "referenceMatch": true
+    },
+    {
+      "from": "hall-details.tsx",
+      "to": "components/hall-details.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "hosting.json",
+      "to": ".openai/hosting.json",
+      "referenceMatch": true
+    },
+    {
+      "from": "hover-card.tsx",
+      "to": "components/ui/hover-card.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "index.ts",
+      "to": "db/index.ts",
+      "referenceMatch": true
+    },
+    {
+      "from": "input-group.tsx",
+      "to": "components/ui/input-group.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "input-otp.tsx",
+      "to": "components/ui/input-otp.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "input.tsx",
+      "to": "components/ui/input.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "install-ci.mjs",
+      "to": "scripts/install-ci.mjs",
+      "referenceMatch": true
+    },
+    {
+      "from": "install-ci.sh",
+      "to": "scripts/install-ci.sh",
+      "referenceMatch": true
+    },
+    {
+      "from": "install-pnpm.sh",
+      "to": "scripts/install-pnpm.sh",
+      "referenceMatch": true
+    },
+    {
+      "from": "item.tsx",
+      "to": "components/ui/item.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "kbd.tsx",
+      "to": "components/ui/kbd.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "label.tsx",
+      "to": "components/ui/label.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "layout.tsx",
+      "to": "app/layout.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "marker.tsx",
+      "to": "components/ui/marker.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "menubar.tsx",
+      "to": "components/ui/menubar.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "message-kind.d.ts",
+      "to": "lib/message-kind.d.ts",
+      "referenceMatch": true
+    },
+    {
+      "from": "message-kind.js",
+      "to": "lib/message-kind.js",
+      "referenceMatch": true
+    },
+    {
+      "from": "message-scroller.tsx",
+      "to": "components/ui/message-scroller.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "message.tsx",
+      "to": "components/ui/message.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "native-select.tsx",
+      "to": "components/ui/native-select.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "navigation-menu.tsx",
+      "to": "components/ui/navigation-menu.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "next.config.ts",
+      "to": "next.config.ts",
+      "referenceMatch": true
+    },
+    {
+      "from": "package-lock.json",
+      "to": "package-lock.json",
+      "referenceMatch": true
+    },
+    {
+      "from": "package.json",
+      "to": "package.json",
+      "referenceMatch": true
+    },
+    {
+      "from": "page.tsx",
+      "to": "app/page.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "pagination.tsx",
+      "to": "components/ui/pagination.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "pnpm-install.mjs",
+      "to": "scripts/pnpm-install.mjs",
+      "referenceMatch": true
+    },
+    {
+      "from": "popover.tsx",
+      "to": "components/ui/popover.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "postcss.config.mjs",
+      "to": "postcss.config.mjs",
+      "referenceMatch": true
+    },
+    {
+      "from": "progress.tsx",
+      "to": "components/ui/progress.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "radio-group.tsx",
+      "to": "components/ui/radio-group.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "README.md",
+      "to": "README.md",
+      "referenceMatch": false
+    },
+    {
+      "from": "rescan-round2-candidates.json",
+      "to": "research/rescan-round2-candidates.json",
+      "referenceMatch": true
+    },
+    {
+      "from": "research-round2-bay.json",
+      "to": "research/research-round2-bay.json",
+      "referenceMatch": true
+    },
+    {
+      "from": "research-round2-bay.md",
+      "to": "research/research-round2-bay.md",
+      "referenceMatch": true
+    },
+    {
+      "from": "research-round2-north.json",
+      "to": "research/research-round2-north.json",
+      "referenceMatch": true
+    },
+    {
+      "from": "research-round2-north.md",
+      "to": "research/research-round2-north.md",
+      "referenceMatch": true
+    },
+    {
+      "from": "research-round2-south.json",
+      "to": "research/research-round2-south.json",
+      "referenceMatch": true
+    },
+    {
+      "from": "research-round2-south.md",
+      "to": "research/research-round2-south.md",
+      "referenceMatch": true
+    },
+    {
+      "from": "resizable.tsx",
+      "to": "components/ui/resizable.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "resolve-links.ts",
+      "to": "lib/resolve-links.ts",
+      "referenceMatch": true
+    },
+    {
+      "from": "route (1).ts",
+      "to": "examples/d1/app/api/notes/route.ts",
+      "referenceMatch": true
+    },
+    {
+      "from": "route.ts",
+      "to": "app/api/monitor/route.ts",
+      "referenceMatch": true
+    },
+    {
+      "from": "run-framework.mjs",
+      "to": "scripts/run-framework.mjs",
+      "referenceMatch": true
+    },
+    {
+      "from": "schema (2).ts",
+      "to": "examples/d1/db/schema.ts",
+      "referenceMatch": true
+    },
+    {
+      "from": "schema.ts",
+      "to": "db/schema.ts",
+      "referenceMatch": true
+    },
+    {
+      "from": "scroll-area.tsx",
+      "to": "components/ui/scroll-area.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "select.tsx",
+      "to": "components/ui/select.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "separator.tsx",
+      "to": "components/ui/separator.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "shadcn-tailwind-4.13.0.css",
+      "to": "vendor/shadcn-tailwind-4.13.0.css",
+      "referenceMatch": true
+    },
+    {
+      "from": "shadcn-tailwind-4.13.0.LICENSE.md",
+      "to": "vendor/shadcn-tailwind-4.13.0.LICENSE.md",
+      "referenceMatch": true
+    },
+    {
+      "from": "sheet.tsx",
+      "to": "components/ui/sheet.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "sidebar.tsx",
+      "to": "components/ui/sidebar.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "sites-env.mjs",
+      "to": "scripts/sites-env.mjs",
+      "referenceMatch": true
+    },
+    {
+      "from": "sites-env.sh",
+      "to": "scripts/sites-env.sh",
+      "referenceMatch": true
+    },
+    {
+      "from": "sites-vite-plugin.LICENSE",
+      "to": "build/sites-vite-plugin.LICENSE",
+      "referenceMatch": true
+    },
+    {
+      "from": "sites-vite-plugin.ts",
+      "to": "build/sites-vite-plugin.ts",
+      "referenceMatch": true
+    },
+    {
+      "from": "skeleton.tsx",
+      "to": "components/ui/skeleton.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "slider.tsx",
+      "to": "components/ui/slider.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "sonner.tsx",
+      "to": "components/ui/sonner.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "spinner.tsx",
+      "to": "components/ui/spinner.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "store.ts",
+      "to": "lib/store.ts",
+      "referenceMatch": true
+    },
+    {
+      "from": "summary.json",
+      "to": "research/summary.json",
+      "referenceMatch": true
+    },
+    {
+      "from": "supabase-store.ts",
+      "to": "lib/supabase-store.ts",
+      "referenceMatch": true
+    },
+    {
+      "from": "switch.tsx",
+      "to": "components/ui/switch.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "table.tsx",
+      "to": "components/ui/table.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "tabs.tsx",
+      "to": "components/ui/tabs.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "textarea.tsx",
+      "to": "components/ui/textarea.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "toggle-group.tsx",
+      "to": "components/ui/toggle-group.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "toggle.tsx",
+      "to": "components/ui/toggle.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "tooltip.tsx",
+      "to": "components/ui/tooltip.tsx",
+      "referenceMatch": true
+    },
+    {
+      "from": "tsconfig.json",
+      "to": "tsconfig.json",
+      "referenceMatch": true
+    },
+    {
+      "from": "types.ts",
+      "to": "lib/types.ts",
+      "referenceMatch": true
+    },
+    {
+      "from": "use-mobile.ts",
+      "to": "hooks/use-mobile.ts",
+      "referenceMatch": true
+    },
+    {
+      "from": "utils.ts",
+      "to": "lib/utils.ts",
+      "referenceMatch": true
+    },
+    {
+      "from": "vite.config.ts",
+      "to": "vite.config.ts",
+      "referenceMatch": true
+    },
+    {
+      "from": "_journal.json",
+      "to": "drizzle/meta/_journal.json",
+      "referenceMatch": true
+    }
+  ],
+  "preservedAnalysisChanges": [
+    "AGENTS.md",
+    "ANALYSIS-GUIDE.md",
+    "app/page.tsx",
+    "app/globals.css",
+    "app/api/locations/route.ts",
+    "app/api/vendors/route.ts",
+    "components/competitive-analysis.tsx",
+    "components/message-check.tsx",
+    "components/vendor-analysis.tsx",
+    "lib/prize-analysis.ts",
+    "lib/vendor-research.ts",
+    "tests/prize-analysis.mjs",
+    "package.json",
+    "tsconfig.json",
+    ".gitignore"
+  ]
+}

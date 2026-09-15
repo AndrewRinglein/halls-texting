@@ -12,11 +12,13 @@ Chumash, Agua Caliente, Fantasy Springs and Table Mountain confirmed enrollment 
 
 The application runs on Cloudflare Workers via Sites/vinext. Supabase is its configured primary database; the prior D1 implementation remains as a migration fallback when Supabase configuration is absent. Tables store hall records, original incoming messages, many-to-many hall associations, sync state and campaign-link mappings. Server-only credentials are never bundled for the browser.
 
-The owner can collect new messages by opening or refreshing the app. Other visitors read collected promotions without signing in. The page refreshes every minute while visible; an unattended background collection schedule is not configured. Tossable Digits email forwarding runs independently. The public app has no SMS sending endpoint.
+Supabase cron job `bingo-sms-sync` collects messages every five minutes independently of browsers and local computers. It calls the hosted sync endpoint using the existing credential stored as `bingo_monitor_sync_key` in Vault. The owner can also collect new messages by opening or refreshing the app. Other visitors read collected promotions without signing in. The page refreshes every minute while visible. Tossable Digits email forwarding runs independently. The public app has no SMS sending endpoint. See [scheduler setup](supabase/schedule-sync.sql) and [repository handoff](HANDOFF.md). Failure notifications are not yet configured.
 
 The parser uses hall names, verified dedicated numbers, audited enrollment sequences and hall-specific campaign links. A shared shortcode or platform domain alone never identifies a hall. Unresolved links receive bounded server-side reads; uncertain or image-only pages remain for review. Shared Vanguard messages appear under both locations only when no single location is specified. Times are shown in America/Los_Angeles.
 
 ## Development
+
+The uploaded repository structure has been restored against the working reference. See [deployment transition](DEPLOYMENT.md), [validation results](research/transition-validation.md), and [new analysis tabs](ANALYSIS-GUIDE.md). GitHub validation does not deploy the Site. Reuse the existing Supabase project and five-minute cron job as described in [HANDOFF.md](HANDOFF.md).
 
 Use Node 22.13+ and the supplied lockfile. Copy .env.example to .env, configure server credentials, run npm run install:ci, then npm run dev. Do not commit .env or .sites-runtime.
 
