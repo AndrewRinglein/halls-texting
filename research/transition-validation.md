@@ -17,6 +17,20 @@ Target: AndrewRinglein/halls-texting, starting at `7c30db6`. Working reference: 
 
 ## Remaining release gates
 
+### Production access follow-up
+
+The owner signed in to the existing Supabase project. Read-only SQL checks through that authenticated dashboard now confirm:
+
+- Project status Healthy; 329 halls and 84 stored messages.
+- Exactly one `bingo-sms-sync` job, active on `*/5 * * * *`, targeting the original live dashboard endpoint.
+- The job references the existing Vault secret; exactly one `bingo_monitor_sync_key` entry exists. Its value was not read or exposed.
+- All five bingo tables have row-level security enabled.
+- Neither `anon` nor `authenticated` has INSERT, UPDATE, DELETE, or TRUNCATE privileges on those tables; neither can read private state/link mappings or execute `bingo_ingest`.
+- The message-read policy allows only records whose kind is `promotion`.
+- The 06:25, 06:30, and 06:35 UTC cron runs succeeded. HTTP responses at those matching times were 200 with no timeout. `last_sync` reached `2026-09-15T06:35:01.000Z`.
+
+These observations resolve the earlier Supabase sign-in, production grant, and scheduled HTTP health audit blockers. No database or cron configuration was changed. The earlier statement below records the situation before sign-in; GitHub push and Sites publication access remain outstanding.
+
 - Existing Sites project access: connector returned project not found for this account. No replacement Site was created.
 - Supabase management access: browser requires sign-in. No server credentials are present in this task environment; none were requested in chat, committed, copied into source, or changed.
 - Inspect actual production policies/grants, cron job count/schedule, HTTP responses, Vault secret presence (not value), and database state after owner access is available. Local permission tests are not a production permission audit.
